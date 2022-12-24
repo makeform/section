@@ -1,1 +1,5 @@
-# section
+# @makeform/section
+
+## License
+
+MIT

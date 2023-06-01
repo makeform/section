@@ -3,6 +3,7 @@
 ## v1.0.2
 
  - update i18n
+ - update dependency
 
 
 ## v1.0.1

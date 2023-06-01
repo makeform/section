@@ -1,13 +1,13 @@
 {
   "name": "@makeform/section",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "scripts": {},
   "keywords": [],
   "author": "zbryikt",
   "license": "MIT",
   "dependencies": {
-    "@plotdb/srcbuild": "^0.0.66"
+    "@plotdb/srcbuild": "^0.0.67"
   },
   "devDependencies": {
     "fedep": "^1.1.11"

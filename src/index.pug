@@ -5,7 +5,7 @@ div
       .border.p-4.rounded.mb-1(ld-each="row")
         div(style="vertical-align:middle;",ld-each="editor-field")
         .m-edit
-          .btn.btn-block.btn-outline-secondary.text-nowrap(ld="t delete") 刪除
+          .btn.btn-block.btn-outline-secondary.text-nowrap(t,ld="delete") 刪除
       .btn.btn-outline-secondary.m-edit(t,ld="popup-input-toggle") 加入新欄位
       .ldcv.scroll(ld="popup-input"): .base.w-640.rwd: .inner.p-4
         div(ld-each="adder-field")

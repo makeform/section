@@ -1,27 +1,17 @@
 div
-  div(plug="widget")
-    div(ld="display", data-display="block"): label.d-flex.align-items-end.flex-wrap
-      div
-        span(ld="label")
-        span.text-danger.ml-2(ld="is-required") *
-      .flex-grow-1
-      .m-edit: .mf-note.text-sm(ld="limitation")
-    .text-sm.text-muted(ld="display", data-display="block"): div(ld="desc", style="margin:-.6em 0 .7em")
-    .form-group
-      .bg-light.p-4.text-center.mb-2(ld="no-data",t) 無資料
-      .border.p-4.rounded.mb-1(ld-each="row")
-        div(style="vertical-align:middle;",ld-each="editor-field")
-        .m-edit
-          .btn.btn-block.btn-outline-secondary.text-nowrap(t,ld="delete") 刪除
-      .btn.btn-outline-secondary.m-edit(ld="popup-input-toggle") #[span(t="新增")]#[span(ld="entry-name")]
-      .ldcv.scroll(ld="popup-input"): .base.w-640.rwd: .inner.p-4
-        div(ld-each="adder-field")
-        .row
-          .col-sm.mb-2
-            .btn.btn-block.btn-outline-secondary.text-nowrap(
-            data-ldcv-set,ld="add") #[span(t="新增")]#[span(ld="entry-name")]
-          .col-sm.mb-2: .btn.btn-block.btn-outline-secondary.text-nowrap(t,data-ldcv-set) 取消
-      .m-edit.mt-2: .text-danger(ld-each="error")
-      .m-edit(ld="display",data-display="block"): .mf-note.text-sm.mt-2.note(ld-each="note")
-
   script(type="@plotdb/block"): include:lsc index.ls
+  div(plug="body")
+    .bg-light.p-4.text-center.mb-2(ld="no-data",t) 無資料
+    .border.p-4.rounded.mb-1(ld-each="row")
+      div(style="vertical-align:middle;",ld-each="editor-field")
+      .m-edit
+        .btn.btn-block.btn-outline-secondary.text-nowrap(t,ld="delete") 刪除
+    .btn.btn-outline-secondary.m-edit(ld="popup-input-toggle") #[span(t="新增")]#[span(ld="entry-name")]
+    .ldcv.scroll(ld="popup-input"): .base.w-640.rwd: .inner.p-4
+      div(ld-each="adder-field")
+      .row
+        .col-sm.mb-2
+          .btn.btn-block.btn-outline-secondary.text-nowrap(
+          data-ldcv-set,ld="add") #[span(t="新增")]#[span(ld="entry-name")]
+        .col-sm.mb-2: .btn.btn-block.btn-outline-secondary.text-nowrap(t,data-ldcv-set) 取消
+    .m-edit.mt-2: .text-danger(ld-each="error")
